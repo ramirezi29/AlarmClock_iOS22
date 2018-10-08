@@ -9,7 +9,10 @@
 import UIKit
 
 class SwitchTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var alarmTime: UILabel!
+    @IBOutlet weak var alarmName: UILabel!
+    @IBOutlet weak var alarmSwitch: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +23,8 @@ class SwitchTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func switchValueChanged(_ sender: Any) {
+    }
+    
 }

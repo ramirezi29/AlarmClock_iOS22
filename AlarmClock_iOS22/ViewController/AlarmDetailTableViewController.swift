@@ -9,7 +9,11 @@
 import UIKit
 
 class AlarmDetailTableViewController: UITableViewController {
-
+   
+    @IBOutlet weak var alarmNameTextField: UITextField!
+    @IBOutlet weak var enableDisableButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,4 +91,7 @@ class AlarmDetailTableViewController: UITableViewController {
     }
     */
 
+    @IBAction func enableDisabledTapped(_ sender: Any) {
+    }
+    
 }

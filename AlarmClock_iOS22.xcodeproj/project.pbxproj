@@ -23,9 +23,9 @@
 		4731CA0C216C04D40070C3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4731CA0F216C04D40070C3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4731CA11216C04D40070C3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4731CA17216C06450070C3D0 /* ALarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ALarmListTableViewController.swift; path = ViewControllers/ALarmListTableViewController.swift; sourceTree = "<group>"; };
-		4731CA19216C07C40070C3D0 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlarmDetailTableViewController.swift; path = ViewControllers/AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
-		4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwitchTableViewCell.swift; path = View/SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		4731CA17216C06450070C3D0 /* ALarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALarmListTableViewController.swift; sourceTree = "<group>"; };
+		4731CA19216C07C40070C3D0 /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,41 @@
 		4731CA04216C04D30070C3D0 /* AlarmClock_iOS22 */ = {
 			isa = PBXGroup;
 			children = (
-				4731CA05216C04D30070C3D0 /* AppDelegate.swift */,
-				4731CA09216C04D30070C3D0 /* Main.storyboard */,
+				4731CA1F216C0DE90070C3D0 /* Resources */,
+				4731CA1E216C0DD50070C3D0 /* ViewController */,
+				4731CA1D216C0DBF0070C3D0 /* View */,
+			);
+			path = AlarmClock_iOS22;
+			sourceTree = "<group>";
+		};
+		4731CA1D216C0DBF0070C3D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4731CA1E216C0DD50070C3D0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				4731CA17216C06450070C3D0 /* ALarmListTableViewController.swift */,
 				4731CA19216C07C40070C3D0 /* AlarmDetailTableViewController.swift */,
-				4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4731CA1F216C0DE90070C3D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4731CA05216C04D30070C3D0 /* AppDelegate.swift */,
+				4731CA09216C04D30070C3D0 /* Main.storyboard */,
 				4731CA0C216C04D40070C3D0 /* Assets.xcassets */,
 				4731CA0E216C04D40070C3D0 /* LaunchScreen.storyboard */,
 				4731CA11216C04D40070C3D0 /* Info.plist */,
 			);
-			path = AlarmClock_iOS22;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = AlarmClock_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AlarmClock_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7AYJDAX2C;
-				INFOPLIST_FILE = AlarmClock_iOS22/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AlarmClock_iOS22/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
