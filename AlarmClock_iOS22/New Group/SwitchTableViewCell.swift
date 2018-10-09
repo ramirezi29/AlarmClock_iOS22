@@ -24,7 +24,7 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
     weak var delegate: SwitchTableViewCellDelegate?
-    
+   //  weak var delegate: ALarmListTableViewController?
     
     func updateViews() {
         guard let alarm = alarm  else {return}

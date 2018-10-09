@@ -74,7 +74,7 @@ class ALarmListTableViewController: UITableViewController {
             
             self.navigationController?.isToolbarHidden = false
             var items = [UIBarButtonItem]()
-            items.append(UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector (editButtonTapped(_:))))
+            items.append(UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector (deleteFirstRowButtonTapped(_:))))
             self.navigationController?.toolbar.items = items
            
             
@@ -89,6 +89,13 @@ class ALarmListTableViewController: UITableViewController {
             
             //save to persistance
         }
+        AlarmController.shared.saveToPersistentStorage()
+    }
+    
+    @IBAction func deleteFirstRowButtonTapped(_ sender: Any) {
+        // TODO: need to include some sort of safety net to prevent the button from action from firing if there is no data in that cell
+        AlarmController.shared.alarms.remove(at: 0)
+        tableView.reloadData()
     }
 }
 
