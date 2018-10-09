@@ -59,7 +59,6 @@ class AlarmController {
         } else {
             cancelUserNotifications(for: alarm)
         }
-        
     }
 }
 
@@ -141,6 +140,7 @@ extension AlarmController: AlarmScheduler{
             }
         }
     }
+    
     //function simply needs to remove pending notification requests using 
     func cancelUserNotifications(for alarm: Alarm) {
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [alarm.uuid])
