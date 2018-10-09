@@ -16,6 +16,8 @@
 		4731CA1C216C081A0070C3D0 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */; };
 		4731CA23216C14C40070C3D0 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731CA22216C14C40070C3D0 /* AlarmModel.swift */; };
 		4731CA25216C18C20070C3D0 /* AlarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731CA24216C18C20070C3D0 /* AlarmController.swift */; };
+		4731CA27216C3E150070C3D0 /* DetailVCExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731CA26216C3E150070C3D0 /* DetailVCExtention.swift */; };
+		4731CA2A216C41E80070C3D0 /* AlarmVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4731CA29216C41E80070C3D0 /* AlarmVCExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4731CA1B216C081A0070C3D0 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		4731CA22216C14C40070C3D0 /* AlarmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
 		4731CA24216C18C20070C3D0 /* AlarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmController.swift; sourceTree = "<group>"; };
+		4731CA26216C3E150070C3D0 /* DetailVCExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVCExtention.swift; sourceTree = "<group>"; };
+		4731CA29216C41E80070C3D0 /* AlarmVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmVCExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				4731CA1F216C0DE90070C3D0 /* Resources */,
 				4731CA1E216C0DD50070C3D0 /* ViewController */,
 				4731CA1D216C0DBF0070C3D0 /* View */,
+				4731CA28216C3E1C0070C3D0 /* UI_Extensions */,
 			);
 			path = AlarmClock_iOS22;
 			sourceTree = "<group>";
@@ -115,6 +120,15 @@
 				4731CA24216C18C20070C3D0 /* AlarmController.swift */,
 			);
 			path = ModelController;
+			sourceTree = "<group>";
+		};
+		4731CA28216C3E1C0070C3D0 /* UI_Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4731CA26216C3E150070C3D0 /* DetailVCExtention.swift */,
+				4731CA29216C41E80070C3D0 /* AlarmVCExtension.swift */,
+			);
+			path = UI_Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +206,9 @@
 				4731CA1A216C07C40070C3D0 /* AlarmDetailTableViewController.swift in Sources */,
 				4731CA1C216C081A0070C3D0 /* SwitchTableViewCell.swift in Sources */,
 				4731CA25216C18C20070C3D0 /* AlarmController.swift in Sources */,
+				4731CA2A216C41E80070C3D0 /* AlarmVCExtension.swift in Sources */,
 				4731CA06216C04D30070C3D0 /* AppDelegate.swift in Sources */,
+				4731CA27216C3E150070C3D0 /* DetailVCExtention.swift in Sources */,
 				4731CA18216C06450070C3D0 /* ALarmListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

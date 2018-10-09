@@ -9,13 +9,23 @@
 import UIKit
 
 class ALarmListTableViewController: UITableViewController {
+    @IBOutlet weak var editButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AlarmListBackGroundUI()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
+    // MARK: TableView UI
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(white: 0, alpha: 0.0)
     }
     
     // MARK: - Table view data source
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -32,7 +42,7 @@ class ALarmListTableViewController: UITableViewController {
         return cell ?? UITableViewCell()
     }
     
-    // Override to support editing the table view.
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let alarmIndex = AlarmController.shared.alarms[indexPath.row]
@@ -54,6 +64,32 @@ class ALarmListTableViewController: UITableViewController {
             
         }
     }
+    
+    @IBAction func editButtonTapped(_ sender: Any) {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+        if tableView.isEditing {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(editButtonTapped(_:)))
+            
+            
+            
+            self.navigationController?.isToolbarHidden = false
+            var items = [UIBarButtonItem]()
+            items.append(UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector (editButtonTapped(_:))))
+            self.navigationController?.toolbar.items = items
+           
+            
+        } else {
+            
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editButtonTapped(_:)))
+            
+            self.navigationController?.isToolbarHidden = true
+            
+            var items = [UIBarButtonItem]()
+            items.append(UIBarButtonItem(barButtonSystemItem: .trash, target: nil, action: #selector (editButtonTapped(_:))))
+            
+            //save to persistance
+        }
+    }
 }
 
 extension ALarmListTableViewController: SwitchTableViewCellDelegate {
@@ -64,3 +100,4 @@ extension ALarmListTableViewController: SwitchTableViewCellDelegate {
     }
     
 }
+

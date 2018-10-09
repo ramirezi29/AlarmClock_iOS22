@@ -38,3 +38,13 @@ class SwitchTableViewCell: UITableViewCell {
     }
     
 }
+
+extension SwitchTableViewCell {
+     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        cell.backgroundColor = UIColor(white: 0, alpha: 0.0)
+        cell.textLabel?.backgroundColor = UIColor.clear
+//        alarmName.font = UIFont(name: "HelveticaNeue", size: 15)
+//        alarmTime.font = UIFont((name: "HelveticaNeue-Bold", size: 20)
+    }
+}

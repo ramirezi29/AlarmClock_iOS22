@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Soothing Alarms-->
         <scene sceneID="ijN-q1-gY4">
             <objects>
                 <tableViewController id="hYK-eF-Ymq" customClass="ALarmListTableViewController" customModule="AlarmClock_iOS22" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,13 +72,22 @@
                             <outlet property="delegate" destination="hYK-eF-Ymq" id="pnT-W0-SKT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Y1U-UQ-IdA">
+                    <navigationItem key="navigationItem" title="Soothing Alarms" id="Y1U-UQ-IdA">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lLZ-Ej-O5S"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="2Pd-Sf-TDt">
+                            <connections>
+                                <action selector="editButtonTapped:" destination="hYK-eF-Ymq" id="iyw-hi-jbl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cme-4x-OPt">
                             <connections>
                                 <segue destination="8JI-0y-FTs" kind="show" id="55r-zf-KWk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="2Pd-Sf-TDt" id="WpO-i4-y8W"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Wj-VJ-HAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,10 +192,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="bQ4-Nf-yHx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JDk-Nk-cQV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JDk-Nk-cQV">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="8JI-0y-FTs" id="cly-Yv-Fgb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="alarmNameTextField" destination="nMA-8T-nHZ" id="sr8-jD-15i"/>
+                        <outlet property="datePicker" destination="p9H-3t-eAm" id="UDn-0C-w1t"/>
                         <outlet property="enableDisableButton" destination="oem-A0-Dvn" id="7sP-Yl-aCy"/>
                     </connections>
                 </tableViewController>
