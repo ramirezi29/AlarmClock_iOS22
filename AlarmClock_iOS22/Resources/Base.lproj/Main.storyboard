@@ -103,7 +103,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="p9H-3t-eAm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="560730343.03529799">
                                                         <!--2018-10-08 22:25:43 +0000-->
                                                     </date>
@@ -129,7 +129,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Alarm Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMA-8T-nHZ">
-                                                    <rect key="frame" x="36" y="16" width="303" height="30"/>
+                                                    <rect key="frame" x="36" y="11" width="303" height="30"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -139,7 +139,7 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="nMA-8T-nHZ" firstAttribute="top" secondItem="a5H-Bf-83e" secondAttribute="topMargin" constant="5" id="EL9-cD-V8Y"/>
+                                                <constraint firstItem="nMA-8T-nHZ" firstAttribute="top" secondItem="a5H-Bf-83e" secondAttribute="topMargin" id="EL9-cD-V8Y"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="nMA-8T-nHZ" secondAttribute="trailing" constant="20" id="Iff-Fq-mN6"/>
                                                 <constraint firstItem="nMA-8T-nHZ" firstAttribute="leading" secondItem="a5H-Bf-83e" secondAttribute="leadingMargin" constant="20" id="ynW-vd-9sX"/>
                                             </constraints>
@@ -157,7 +157,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oem-A0-Dvn">
-                                                    <rect key="frame" x="103" y="11" width="143" height="30"/>
+                                                    <rect key="frame" x="101" y="33" width="143" height="30"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Enable/Disable"/>
                                                     <connections>
@@ -167,9 +167,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oem-A0-Dvn" firstAttribute="bottom" secondItem="A0w-p9-nDb" secondAttribute="bottomMargin" constant="-44" id="aQ4-Qf-gGH"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="oem-A0-Dvn" secondAttribute="trailing" constant="113" id="q6k-OP-KY1"/>
-                                                <constraint firstItem="oem-A0-Dvn" firstAttribute="leading" secondItem="A0w-p9-nDb" secondAttribute="leadingMargin" constant="87" id="sxX-pS-u9w"/>
+                                                <constraint firstItem="oem-A0-Dvn" firstAttribute="top" secondItem="A0w-p9-nDb" secondAttribute="top" constant="33" id="L5k-zc-pEH"/>
+                                                <constraint firstItem="oem-A0-Dvn" firstAttribute="bottom" secondItem="A0w-p9-nDb" secondAttribute="bottomMargin" constant="-22" id="aQ4-Qf-gGH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="oem-A0-Dvn" secondAttribute="trailing" constant="115" id="q6k-OP-KY1"/>
+                                                <constraint firstItem="oem-A0-Dvn" firstAttribute="leading" secondItem="A0w-p9-nDb" secondAttribute="leadingMargin" constant="85" id="sxX-pS-u9w"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
